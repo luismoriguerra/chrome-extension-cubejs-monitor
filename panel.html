@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-      h1 {
-        color: #333;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        border: 1px solid #999;
-        padding: 0.5rem;
-        text-align: left;
-      }
-      th {
-        background-color: #f3f3f3;
-      }
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
+        body {
+            background-color: #2f2f2f;
+            color: #fff;
+        }
+        h1 {
+            color: #f0f0f0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #fff;
+            padding: 5px;
+            color: #fff;
+        }
+        th {
+            background-color: #3f3f3f;
+        }
+        td {
+            background-color: #4f4f4f;
+        }
+        #filter-input, #clear-table {
+            margin-bottom: 10px;
+        }
+        #clear-table {
+            margin-left: 10px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <h1>Network Monitor</h1>
     <p id="total-count">Total queries: 0</p>
-    <input id="filter-input" type="text" placeholder="Filter queries" />
     <button id="clear-table">Clear Table</button>
+    <input id="filter-input" type="text" placeholder="Filter queries">
     <table id="requests-table">
-      <thead>
-        <tr>
-          <th>Query</th>
-          <th>Count</th>
-          <th>Time Completed</th>
-          <th>methods</th>
-          <th>errors</th>
-          <th>response</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Rows will be added here -->
-      </tbody>
+        <thead>
+            <tr>
+                <th>status</th>
+                <th>Count</th>
+                <th>Total Time (s)</th>
+                <th>Query</th>
+                <th>method</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added here -->
+        </tbody>
     </table>
-  </body>
+</body>
 </html>
