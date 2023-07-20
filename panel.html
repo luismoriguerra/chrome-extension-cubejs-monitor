@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #333;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: left;
+      }
+      th {
+        background-color: #f3f3f3;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Network Monitor</h1>
+    <p id="total-count">Total queries: 0</p>
+    <input id="filter-input" type="text" placeholder="Filter queries" />
+    <button id="clear-table">Clear Table</button>
+    <table id="requests-table">
+      <thead>
+        <tr>
+          <th>Query</th>
+          <th>Count</th>
+          <th>Time Completed</th>
+          <th>methods</th>
+          <th>errors</th>
+          <th>response</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added here -->
+      </tbody>
+    </table>
+  </body>
+</html>

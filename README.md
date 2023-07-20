@@ -1,0 +1,1 @@
+# chrome-extension-cubejs-monitor

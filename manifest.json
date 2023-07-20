@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Cube queries monitor",
+  "description": "Monitors and logs network requests",
+  "version": "1.0",
+  "permissions": ["devtools"],
+  "devtools_page": "devtools.html",
+  "action": {
+    
+  }
+}
